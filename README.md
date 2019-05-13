@@ -1,5 +1,6 @@
 # jc_colorPicker
 Native and Simple color Picker
+<img src="myPicker.png">
 include Javascript file jc_colorPicker.js and enjoy
 
 # Intro
