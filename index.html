@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JC Color</title>
+	<style type="text/css">
+		#jc_colorPicker {
+			/* CSS untuk myPicker*/
+		}
+	</style>
+	<script src="js/jc_colorPicker.js"></script>	
+</head>
+<body>
+
+<button onclick="myStart();">show</button>
+<button onclick="myStop()">hide</button>
+
+<div id="myDiv"></div>
+
+<script>
+	let myDiv 	= document.querySelector('#myDiv');
+
+	let myRes = (event) => {
+		document.body.style.background = event;
+	}
+	
+	let myPicker = new JCpicker({width: 150, height: 150}, myDiv, myRes, 'rgb', true);
+	
+	function myStart() {
+		myPicker.on();
+	}
+
+	function myStop() {
+		myPicker.off();
+	}
+
+</script>
+
+</body>
+</html>
