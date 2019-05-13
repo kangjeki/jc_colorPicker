@@ -1,5 +1,5 @@
 /* -------------------------------------------------------------------------------------------------------------------------------
-# JCpicker 		: Simple Color Picker;
+# JCpicker 	: Simple Color Picker;
 # created by 	: JC Programs;
 ------------------------------------------------------------------------------------------------------------------------------- */
 class JCpicker {
@@ -269,7 +269,7 @@ class JCpicker {
 									margin-left: 5px; 
 									padding: 0; 
 									width: 200px; 
-									height: ${jc_frameHeight + 11}px; 
+									height: ${String(jc_frameHeight + 11)}px; 
 									display: inline-block; 
 									overflow: hidden;
 								`
