@@ -36,7 +36,12 @@ class JCpicker {
 				if (target !== null || target !== undefined) {
 
 					if (target.exec == "frame") {
-						targetFrame.prepend(el);
+						if (targetFrame !== undefined) {
+							targetFrame.prepend(el);
+						}
+						else {
+							$('body').prepend(el);
+						}						
 					}
 					else if (target.exec == "append") {
 						$(target.element).append(el);
