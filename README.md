@@ -11,7 +11,7 @@ include js File on head
 # API
 <b>Parameter</b>
 
-    JCpicker({width: , height: }, (Element)target, (callback)response, (String)type, (Bool)panel);
+    JCpicker({width: (int), height: (int)}, (Element)target, (callback)response, (String)type, (Bool)panel);
 
 * width     = "this width frame".<br>
 * height    = "this height frame".<br>
