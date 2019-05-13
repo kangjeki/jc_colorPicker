@@ -578,12 +578,18 @@ class JCpicker {
 		// ===========================================================================================================
 		// Onload Window
 		this.on = function() {
-			const 	regist = new Register();
-					regist.setReg(); 
-			set_listEvent();
+			const 	frmActS = $("#jc_colorPicker");
+			if (frmActS == null) {
+				const 	regist = new Register();
+						regist.setReg(); 
+				set_listEvent();	
+			}
 		}
 		this.off = function() {
-			$('#jc_colorPicker').remove();
+			const 	frmActH = $("#jc_colorPicker");
+			if (frmActH != null) {
+				$('#jc_colorPicker').remove();
+			}
 		}
 	}
 }
